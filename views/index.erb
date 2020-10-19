@@ -1,0 +1,10 @@
+<h1>
+  Guillaume's Cookbook
+</h1>
+
+<% @titles.each_with_index do |title, index| %>
+  <li>
+    <%= index + 1 %> - <%= title %> <a href="/destroy/:<%=index %>">Destroy recipe</a> <a href="/read/:<%=index %>">Read recipe</a>
+  </li>
+<% end %>
+<a href="/new">Create new recipe</a>
